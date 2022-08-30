@@ -99,7 +99,7 @@ a:visited {
 }
 
 body {
-  background-image: url(public/img/istockphoto-1165399909-612x612.jpeg);
+  background-image: url(../img/istockphoto-1165399909-612x612.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
