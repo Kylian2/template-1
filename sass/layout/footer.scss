@@ -1,0 +1,28 @@
+.footer{
+    font-family: $fontprincipale;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+
+    a{
+        opacity: .3;
+        &:hover{
+            opacity: .5;
+        }
+        &:active{
+            opacity: 1;
+        }
+    }
+    .footer__links{
+        padding: 10px;
+        text-transform: lowercase;
+        &_principal{
+        font-size: 22px;
+        }
+    }
+    .footer__links__secondaire{
+        font-size: 14px;
+    }
+}

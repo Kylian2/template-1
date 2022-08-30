@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Dancing+Script:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+$fontnavbarre: 'Alumni Sans Pinstripe'; 
+$fontlogo: 'Dancing Script', cursive;
+$fontprincipale: 'Roboto', sans-serif;
+$fontsecondaire: 'Alumni Sans Pinstripe';
+$colornavbarre: white;
+
+$maincolor: white;
+
+$colorvisitedlinks: black;
+
+$backgroundmaincolor: white;
+
+$ratecolor: rgb(10, 92, 37); 
+$ratebordercolor: lighten($ratecolor, 10%);
+$ratecolor-none: lighten($ratecolor, 70%);
+$ratebordercolor-none: lighten($ratecolor-none, 10%)

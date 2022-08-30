@@ -1,0 +1,199 @@
+body{
+    background-image: url(/public/img/istockphoto-1165399909-612x612.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.main{
+    background-color: $backgroundmaincolor;
+    margin-top: 250px;
+    margin: 5%;
+    width: 90%;
+    border-radius: 25px;
+    padding: 0 0 40px 0;
+}
+
+.title{
+    font-family: $fontlogo;
+    font-size: 72px;
+    width: 100vw;
+    text-align: center;
+    color: $maincolor;
+    margin: 7vh 0 0vh 0;
+    @include portrait-tablette{
+        margin: 20vh 0 10vh 0;
+    }
+}
+
+.firstsection{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 2%;
+    align-items: center;
+    justify-content: space-around;
+    @include paysage-tablette{
+        padding: 60px 20px;
+    }
+}
+
+.avis{
+    width: 44%;
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    &__top{
+        display: flex;
+        justify-content: start;
+        margin: 10px;
+        &__name{
+            font-family: $fontprincipale;
+            font-weight: 700;
+            font-size: 20px;
+        }
+        &__rate{
+            margin-left: 5%;
+            display: flex;
+            align-items: center;
+            gap: 1%;
+        }
+    }
+    &__text{
+        font-family: $fontprincipale;
+        padding: 10px;
+    }
+    @include perso(838px) {
+        padding: 40px 20px;
+    }
+}
+
+.rate_statut{
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: $ratecolor;
+    border: 2px solid $ratebordercolor;
+}
+
+.rate_statut-none{
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: $ratecolor-none;
+    border: 2px solid $ratebordercolor-none;
+}
+
+.horaire{
+    text-align: center;
+    min-width: 350px;
+    width: 44%;
+    padding: 10px;
+    h1{
+        font-size: 32px; 
+        font-family: $fontlogo;
+        margin-bottom: 20px;;
+    }
+    &__ligne{
+        font-family: $fontprincipale;
+        font-size: 18px;
+    }
+    @include perso(838px) {
+        padding: 40px 0;
+    }
+}
+
+.jour{
+    font-family: $fontlogo;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.secondsection{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    @include perso(700px){
+        padding-top: 0;
+    }
+    .underdiv{
+        display: flex;
+        gap: 1%;
+        flex-direction: column;
+        @include paysage-tablette{
+            flex-direction: row;
+        }
+    }
+    h1{
+        text-align: center;
+        font-family: $fontlogo;
+        font-size: 32px;
+        margin: 50px;
+    }
+    .a-propos{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .text{
+        text-align: center;
+        font-family: $fontprincipale;
+        @include paysage-tablette{
+            padding: 0 40px;
+        }
+        .separateur{
+            display: block;
+            height: 20px;
+        }
+    }
+}
+
+.galerie{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px 0;
+    @include paysage-tablette{
+        margin: 0;
+    }
+    .size-1{
+        width: 450px;
+        height: 220px;
+        @include paysage-tablette{
+            margin: 0;
+        }
+
+    }
+    .size-2{
+        width: 220px;
+        height: 220px;
+        @include paysage-tablette{
+            margin: 0;
+        }
+    }
+}
+
+.lieu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    h1{
+        font-family: $fontlogo;
+        font-size: 42px
+    }
+    p{
+        font-family: $fontprincipale;
+    }
+    &__carte{
+        width: 80%;
+        height: 45vh;
+        @include paysage-tablette{
+            height: 60vh;
+        }
+    }
+}
+

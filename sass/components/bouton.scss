@@ -1,0 +1,17 @@
+.call-button{
+    width: 200px;
+    height: 60px;
+    padding: 20px 40px;
+    background: $ratecolor;
+    border-radius: 5px;
+    color: $maincolor;
+    text-align: center;
+    font-family: $fontprincipale;
+    font-weight: 500;
+    margin: 40px;
+    &:hover{
+        background: darken($ratecolor, 10%);
+        border-radius: 15px;
+        transition: .3s;
+    }
+}

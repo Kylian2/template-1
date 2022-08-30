@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Dancing+Script:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap");
+.nav-barre {
+  display: flex;
+  height: 100px;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 5%;
+  color: white;
+}
+.nav-barre ul {
+  align-items: center;
+  display: flex;
+  gap: 10%;
+  width: 35%;
+  font-family: "Alumni Sans Pinstripe";
+  color: white;
+  font-size: 22px;
+}
+.nav-barre ul a {
+  color: white;
+}
+.nav-barre ul a:hover {
+  color: #0a5c25 !important;
+  transition: 0.2s;
+}
+.nav-barre ul a:visited {
+  color: white;
+}
+.nav-barre__logo {
+  font-family: "Dancing Script", cursive;
+}
+@media screen and (min-width: 768px) {
+  .nav-barre__logo {
+    font-size: 26px;
+  }
+}
+
+.footer {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.footer a {
+  opacity: 0.3;
+}
+.footer a:hover {
+  opacity: 0.5;
+}
+.footer a:active {
+  opacity: 1;
+}
+.footer .footer__links {
+  padding: 10px;
+  text-transform: lowercase;
+}
+.footer .footer__links_principal {
+  font-size: 22px;
+}
+.footer .footer__links__secondaire {
+  font-size: 14px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+a {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+.call-button {
+  width: 200px;
+  height: 60px;
+  padding: 20px 40px;
+  background: #0a5c25;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  margin: 40px;
+}
+.call-button:hover {
+  background: #052e13;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+body {
+  background-image: url(/public/img/istockphoto-1165399909-612x612.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.main {
+  background-color: white;
+  margin-top: 250px;
+  margin: 5%;
+  width: 90%;
+  border-radius: 25px;
+  padding: 0 0 40px 0;
+}
+
+.title {
+  font-family: "Dancing Script", cursive;
+  font-size: 72px;
+  width: 100vw;
+  text-align: center;
+  color: white;
+  margin: 7vh 0 0vh 0;
+}
+@media screen and (min-width: 768px) {
+  .title {
+    margin: 20vh 0 10vh 0;
+  }
+}
+
+.firstsection {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 2%;
+  align-items: center;
+  justify-content: space-around;
+}
+@media screen and (min-width: 1024px) {
+  .firstsection {
+    padding: 60px 20px;
+  }
+}
+
+.avis {
+  width: 44%;
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+.avis__top {
+  display: flex;
+  justify-content: start;
+  margin: 10px;
+}
+.avis__top__name {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+.avis__top__rate {
+  margin-left: 5%;
+  display: flex;
+  align-items: center;
+  gap: 1%;
+}
+.avis__text {
+  font-family: "Roboto", sans-serif;
+  padding: 10px;
+}
+@media screen and (max-width: 838px) {
+  .avis {
+    padding: 40px 20px;
+  }
+}
+
+.rate_statut {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #0a5c25;
+  border: 2px solid #0f8a38;
+}
+
+.rate_statut-none {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #d1fadf;
+  border: 2px solid white;
+}
+
+.horaire {
+  text-align: center;
+  min-width: 350px;
+  width: 44%;
+  padding: 10px;
+}
+.horaire h1 {
+  font-size: 32px;
+  font-family: "Dancing Script", cursive;
+  margin-bottom: 20px;
+}
+.horaire__ligne {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+@media screen and (max-width: 838px) {
+  .horaire {
+    padding: 40px 0;
+  }
+}
+
+.jour {
+  font-family: "Dancing Script", cursive;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.secondsection {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+@media screen and (max-width: 700px) {
+  .secondsection {
+    padding-top: 0;
+  }
+}
+.secondsection .underdiv {
+  display: flex;
+  gap: 1%;
+  flex-direction: column;
+}
+@media screen and (min-width: 1024px) {
+  .secondsection .underdiv {
+    flex-direction: row;
+  }
+}
+.secondsection h1 {
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-size: 32px;
+  margin: 50px;
+}
+.secondsection .a-propos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.secondsection .text {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+@media screen and (min-width: 1024px) {
+  .secondsection .text {
+    padding: 0 40px;
+  }
+}
+.secondsection .text .separateur {
+  display: block;
+  height: 20px;
+}
+
+.galerie {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 50px 0;
+}
+@media screen and (min-width: 1024px) {
+  .galerie {
+    margin: 0;
+  }
+}
+.galerie .size-1 {
+  width: 450px;
+  height: 220px;
+}
+@media screen and (min-width: 1024px) {
+  .galerie .size-1 {
+    margin: 0;
+  }
+}
+.galerie .size-2 {
+  width: 220px;
+  height: 220px;
+}
+@media screen and (min-width: 1024px) {
+  .galerie .size-2 {
+    margin: 0;
+  }
+}
+
+.lieu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.lieu h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 42px;
+}
+.lieu p {
+  font-family: "Roboto", sans-serif;
+}
+.lieu__carte {
+  width: 80%;
+  height: 45vh;
+}
+@media screen and (min-width: 1024px) {
+  .lieu__carte {
+    height: 60vh;
+  }
+}
+
+.main {
+  padding: 5%;
+}
+.main .menu {
+  font-family: "Roboto", sans-serif;
+}
+.main .menu__type__nom {
+  font-size: 24px;
+}
+.main .menu__plat {
+  padding-left: 25px;
+  margin: 25px 0;
+}
+.main .menu__plat__name-conteneur {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  align-items: center;
+}
+.main .menu__plat__nom {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 2px 0 5px 0;
+  display: inline-block;
+}
+.main .menu__plat__nom::before {
+  content: "";
+  background: #0a5c25;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  position: relative;
+  top: -1px;
+  margin: 0 10px;
+  border-radius: 50%;
+}
+.main .menu__plat__details {
+  margin-left: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */
